@@ -1,0 +1,8 @@
+{
+  "name": "ttag.macro",
+  "private": true,
+  "workspaces": [
+    "lib",
+    "examples/*"
+  ]
+}

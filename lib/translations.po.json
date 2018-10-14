@@ -1,0 +1,47 @@
+{
+  "charset": "utf-8",
+  "headers": {
+    "content-type": "text/plain; charset=UTF-8",
+    "content-transfer-encoding": "8bit",
+    "plural-forms": "nplurals=2; plural=(n!=1);"
+  },
+  "translations": {
+    "": {
+      "simple string literal": {
+        "msgid": "simple string literal",
+        "msgstr": ["simple string literal translated"]
+      },
+      "${ a } simple string ${ b } literal with formatting": {
+        "msgid": "${ a } simple string ${ b } literal with formatting",
+        "msgstr": [
+          "${ a } simple string ${ b } literal with formatting [translated]"
+        ]
+      },
+      "no translator notes": { "msgid": "no translator notes", "msgstr": [""] },
+      "plural form with ${ n } plural": {
+        "msgid": "plural form with ${ n } plural",
+        "msgid_plural": "plural form with ${ n } plurals",
+        "msgstr": [
+          "plural form with ${ n } plural [translated]",
+          "plural form with ${ n } plurals [translated]"
+        ]
+      },
+      "first line\nsecond line\nthird line": {
+        "msgid": "first line\nsecond line\nthird line",
+        "msgstr": ["translation"]
+      },
+      "${ a } spaces test": {
+        "msgid": "${ a } spaces test",
+        "msgstr": ["${a} spaces test [translated]"]
+      },
+      "Typo test ${ mississipi }": {
+        "msgid": "Typo test ${ mississipi }",
+        "msgstr": ["Typo test ${ missingpi }"]
+      },
+      "{name} fuzzy name": {
+        "msgid": "{name} fuzzy name",
+        "msgstr": ["{surname} fuzzy name"]
+      }
+    }
+  }
+}

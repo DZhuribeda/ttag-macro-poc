@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`macro should replace translations: should replace translations 1`] = `
+"
+import { t, jt, gettext, ngettext, msgid } from './macro';
+
+const a = 'text';
+const b = ['text 1', 'text 2'];
+
+function pluralText(n) {
+  return ngettext(
+    msgid\`plural form with \${ n } plural\`,
+    \`plural form with \${ n } plurals\`,
+    n
+  );
+}
+
+console.log(t\`simple string literal\`);
+console.log(jt\`\${ a } simple string \${ b } literal with formatting\`);
+console.log(t\`no translator notes\`);
+console.log(pluralText(1));
+console.log(pluralText(2));
+console.log(t\`
+  first line
+  second line
+  third line
+\`);
+console.log(gettext\`\${ a } spaces test\`);
+console.log(t\`{name} fuzzy name\`);
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+function _tag_ngettext(n, args) {
+  return args[+(n != 1)];
+}
+
+import { t as _t, jt as _jt, gettext as _gettext, ngettext as _ngettext, msgid as _msgid } from \\"ttag\\";
+const a = 'text';
+const b = ['text 1', 'text 2'];
+
+function pluralText(n) {
+  return _tag_ngettext(n, [\`plural form with \${n} plural [translated]\`, \`plural form with \${n} plurals [translated]\`]);
+}
+
+console.log(\\"simple string literal translated\\");
+console.log([a, \\" simple string \\", b, \\" literal with formatting [translated]\\"]);
+console.log(\\"no translator notes\\");
+console.log(pluralText(1));
+console.log(pluralText(2));
+console.log(\\"translation\\");
+console.log(_gettext\`\${a} spaces test\`);
+console.log(\\"{name} fuzzy name\\");
+"
+`;
