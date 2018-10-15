@@ -6,6 +6,7 @@
   },
   "main": "build/macro.js",
   "scripts": {
+    "postinstall": "cd ../babel-plugin-ttag && yarn build",
     "build": "babel macro.js --out-dir build",
     "test": "jest"
   },
