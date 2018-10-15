@@ -5,10 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { addLocale, useLocale } from 'ttag.macro';
 
-// Load translations in runtime
-const translationObj = require('./translations.po.json');
-addLocale('en', translationObj);
-useLocale('en');
+// Load translations in develop mode
+if (process.env.NODE_ENV === 'development') {
+  addLocale('default', require('./translations.po.json'));
+  useLocale('default');
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
