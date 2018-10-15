@@ -2,7 +2,7 @@
   "name": "ttag.macro",
   "version": "0.1.0",
   "dependencies": {
-    "babel-plugin-ttag": "^1.3.4"
+    "babel-plugin-ttag": "1.3.4"
   },
   "main": "build/macro.js",
   "scripts": {

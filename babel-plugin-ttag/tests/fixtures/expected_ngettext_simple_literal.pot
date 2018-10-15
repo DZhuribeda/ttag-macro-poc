@@ -1,0 +1,9 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "${ a } banana"
+msgid_plural "${ a } banana"
+msgstr[0] ""
+msgstr[1] ""

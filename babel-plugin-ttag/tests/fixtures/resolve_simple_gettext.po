@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: tests/fixtures/fixture.js:4
+msgid "simple string literal"
+msgstr "simple string literal translated"
+
+#: tests/fixtures/fixture.js:10
+msgid "${ a } simple string ${ b } literal with formatting"
+msgstr "${ a } simple string ${ b } literal with formatting [translated]"
+
+#: tests/fixtures/fixture.js:100
+msgid "${ item.name.value } simple string ${ item.age.value } literal with formatting"
+msgstr "${ item.name.value } simple string ${ item.age.value } literal with formatting [translated]"
+
+#: tests/fixtures/fixture.js:5
+msgid "no translator notes"
+msgstr ""
+
+#: tests/fixtures/fixture.js:6
+msgid "plural form with ${ n } plural"
+msgid_plural "plural form with ${ n } plurals"
+msgstr[0] "plural form with ${ n } plural [translated]"
+msgstr[1] "plural form with ${ n } plurals [translated]"
+
+#: tests/fixtures/fixture.js:66
+msgid "plural form with ${ item.n } plural"
+msgid_plural "plural form with ${ item.n } plurals"
+msgstr[0] "plural form with ${ item.n } plural [translated]"
+msgstr[1] "plural form with ${ item.n } plurals [translated]"
+
+#: tests/fixtures/fixture.js:7
+msgid "no translator notes plural"
+msgid_plural "no translator notes plural"
+msgstr[0] ""
+msgstr[1] ""
+
+#: tests/fixtures/fixture.js:7
+msgid "no translation plural"
+msgid_plural "no translation plural"
+msgstr[0] ""
+msgstr[1] ""
+
+#: tests/fixtures/fixture.js:7
+msgid "no translator notes plural formatted ${ a }"
+msgid_plural "no translator notes plural formatted ${ a }"
+msgstr[0] ""
+msgstr[1] ""
+
+#: tests/fixtures/fixture.js:8
+msgid ""
+"first line\n"
+"second line\n"
+"third line"
+msgstr "translation"
+
+#: tests/fixtures/fixture.js:11
+msgid ""
+"first line plural\n"
+"second line plural\n"
+"third line plural"
+msgid_plural ""
+"first line plural\n"
+"second line plural\n"
+"third line plural"
+msgstr[0] "translation plural"
+msgstr[1] "translation plurals"
+
+#: tests/fixtures/fixture.js:20
+msgid "${ a } spaces test"
+msgstr "${a} spaces test [translated]"
+
+#: tests/fixtures/fixture.js:11
+msgid ""
+"first line plural\n"
+"second line plural"
+msgid_plural ""
+"first line plural\n"
+"second line plural"
+msgstr[0] "translation plural"
+msgstr[1] "translation plurals"
+
+#: tests/fixtures/fixture.js:20
+msgid "Typo test ${ mississipi }"
+msgstr "Typo test ${ missingpi }"
+
+#: tests/fixtures/fixture.js:20
+msgid "${ appleCount } apple"
+msgid_plural "${ appleCount } apple"
+msgstr[0] "${ appleCount } apple (translated)"
+msgstr[1] "${ count } apples (translated)"
+
+#: tests/fixtures/fixture.js:22
+msgid "test computed ${ a['computed'] }"
+msgstr "test computed ${ a['computed'] } translated"
+
+#: tests/fixtures/fixture.js:223
+#, fuzzy
+msgid "{name} fuzzy name"
+msgstr "{surname} fuzzy name"
+
+msgid "test test ${ MAX_AMOUNT }"
+msgstr "test test ${ MAX_AMOUNT } translate"
