@@ -142,9 +142,9 @@ export default function () {
             CallExpression: tryMatchCall(extractOrResolve),
             Program: (nodePath, state) => {
                 if (!context) {
-                    context = new TtagContext(state.opts);
+                  context = new TtagContext(state.opts);
                 } else {
-                    context.clear();
+                  context.clear();
                 }
                 disabledScopes = new Set();
                 if (hasDisablingComment(nodePath.node)) {
@@ -173,8 +173,12 @@ export default function () {
                         }
                     });
             },
-            ImportDeclaration: (nodePath) => {
+            ImportDeclaration: (nodePath, state) => {
                 const { node } = nodePath;
+
+                if (!context) {
+                  context = new TtagContext(state.opts);
+                }
                 if (isTtagImport(node)) {
                     node.specifiers
                     .filter(({ local: { name } }) => ALIAS_TO_FUNC_MAP[name])
