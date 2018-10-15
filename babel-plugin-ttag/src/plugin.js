@@ -142,9 +142,9 @@ export default function () {
             CallExpression: tryMatchCall(extractOrResolve),
             Program: (nodePath, state) => {
                 if (!context) {
-                  context = new TtagContext(state.opts);
+                    context = new TtagContext(state.opts);
                 } else {
-                  context.clear();
+                    context.clear();
                 }
                 disabledScopes = new Set();
                 if (hasDisablingComment(nodePath.node)) {
@@ -177,7 +177,7 @@ export default function () {
                 const { node } = nodePath;
 
                 if (!context) {
-                  context = new TtagContext(state.opts);
+                    context = new TtagContext(state.opts);
                 }
                 if (isTtagImport(node)) {
                     node.specifiers
