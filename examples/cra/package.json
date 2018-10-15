@@ -23,5 +23,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "ttag-cli": "^1.3.4"
+  }
 }

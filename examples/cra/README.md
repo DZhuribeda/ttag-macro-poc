@@ -26,3 +26,9 @@ module.exports = process.env.NODE_ENV === 'production'
   }
   : {};
 ```
+
+Extract locales with [ttag-cli](https://github.com/ttag-org/ttag-cli#extract-outputlang-src):
+```sh
+# Create a `translations.pot` at root
+yarn run ttag extract src
+```
