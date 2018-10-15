@@ -1,5 +1,5 @@
 {
-  "name": "ttag.macro",
+  "name": "ttag-macro-poc",
   "private": true,
   "workspaces": [
     "lib",
