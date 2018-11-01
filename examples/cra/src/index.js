@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { addLocale, useLocale } from 'ttag.macro';
+import { addLocale, useLocale } from 'ttag';
 
 // Load translations in develop mode
 if (process.env.NODE_ENV === 'development') {
